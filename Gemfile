@@ -10,8 +10,8 @@ gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 
-# Using bootstrap 4 (it needs jquery)
-gem 'bootstrap'
+# Using bootstrap 4.1.3 (it needs jquery)
+gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
 
 

@@ -1,0 +1,13 @@
+<h1>Edit post</h1>
+
+<%= form_for @post do |f| %>
+
+  <%= f.label :subject, 'Subject' %>
+  <br>
+  <%= f.text_field :subject %>
+  <br>
+  <br>
+
+  <%= f.submit %>
+
+<% end %>
