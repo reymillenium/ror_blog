@@ -1,0 +1,16 @@
+<h1>Posts List</h1>
+
+<% @posts.each do |post| %>
+
+  <p>
+    The post with the id = <%= post.id %> has a subject = <%= post.subject %> <%= link_to 'Edit', edit_post_path(post) %>
+    <br>
+    <%= link_to 'Delete', post, method: :delete, data: {confirm: 'Are you sure?'} %>
+  </p>
+  <br>
+
+<% end %>
+
+<h1>Using a partial</h1>
+
+<%= render @posts %>
